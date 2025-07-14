@@ -2,8 +2,8 @@
 #include <string.h>
 
 void saisirMot(char *mot);
-void inverserMot(const char *mot, char *motinv);
-int estPalindrome(const char *mot, const char *motinv);
+void inverserMot(char *mot, char *motinv);
+int estPalindrome(char *mot, char *motinv);
 void afficherResultat(int palindrome);
 
 int main()
@@ -26,7 +26,7 @@ void saisirMot(char *mot)
     scanf("%s", mot);
 }
 
-void inverserMot(const char *mot, char *motinv)
+void inverserMot(char *mot, char *motinv)
 {
     int n = strlen(mot);
     int j = 0;
@@ -38,7 +38,7 @@ void inverserMot(const char *mot, char *motinv)
     motinv[j] = '\0'; // Terminer la chaîne inversée
 }
 
-int estPalindrome(const char *mot, const char *motinv)
+int estPalindrome(char *mot,char *motinv)
 {
     return (strcmp(mot, motinv) == 0);
 }
