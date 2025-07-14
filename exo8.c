@@ -37,7 +37,7 @@ void saisirBigramme(char *big1, char *big2)
 }
 
 // Compte le nombre d'occurrences du bigramme
-int compterBigramme(const char *mot, char big1, char big2)
+int compterBigramme(char *mot, char big1, char big2)
 {
     int i, count = 0;
     int n = strlen(mot);
