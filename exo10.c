@@ -23,7 +23,7 @@ int main()
 void saisirMot(char *mot)
 {
     printf("enter le mot que vous voulez crypter =");
-    fgets(mot, 100, stdin);
+    gets(mot);
     
     int n = strlen(mot);
     if (mot[n - 1] == '\n')
@@ -40,7 +40,7 @@ int estVoyelle(char c)
 }
 
 // Crypte le mot selon la regle du IT
-void crypterMot(const char *mot, char *motcrypt)
+void crypterMot(char *mot, char *motcrypt)
 {
     char it[2] = { 'I', 'T' };
     int i, v = 0;
