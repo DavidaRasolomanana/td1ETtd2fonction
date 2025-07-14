@@ -3,8 +3,8 @@
 
 // Fonctions
 void saisirMot(char *mot);
-void crypterMot(const char *mot, char *motcrypt);
-void afficherMotCrypte(const char *motcrypt);
+void crypterMot(char *mot, char *motcrypt);
+void afficherMotCrypte(char *motcrypt);
 int estVoyelle(char c);
 
 int main()
@@ -70,7 +70,7 @@ void crypterMot(char *mot, char *motcrypt)
 }
 
 // Affichage du mot crypte
-void afficherMotCrypte(const char *motcrypt)
+void afficherMotCrypte(char *motcrypt)
 {
     printf("le mot crypte est %s\n", motcrypt);
 }
