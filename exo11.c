@@ -22,7 +22,7 @@ int main()
 void saisirMotCrypte(char *mot)
 {
     printf("enter le mot  crypter =");
-    fgets(mot, 100, stdin);
+    gets(mot);
     int n = strlen(mot);
     if (mot[n - 1] == '\n')
     {
@@ -38,7 +38,7 @@ int estVoyelle(char c)
 }
 
 // Fonction pour decrypter le mot
-void decrypterMot(const char *mot, char *motdecrypt)
+void decrypterMot(char *mot, char *motdecrypt)
 {
     int i, v = 0;
     char it1 = 'I';
