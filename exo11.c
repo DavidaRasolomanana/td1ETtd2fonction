@@ -2,8 +2,8 @@
 #include <string.h>
 
 void saisirMotCrypte(char *mot);
-void decrypterMot(const char *mot, char *motdecrypt);
-void afficherMotDecrypte(const char *motdecrypt);
+void decrypterMot(char *mot, char *motdecrypt);
+void afficherMotDecrypte(char *motdecrypt);
 int estVoyelle(char c);
 
 int main()
@@ -75,7 +75,7 @@ void decrypterMot(char *mot, char *motdecrypt)
 }
 
 // Fonction pour afficher le mot decrypte
-void afficherMotDecrypte(const char *motdecrypt)
+void afficherMotDecrypte(char *motdecrypt)
 {
     printf("le mot decrypte est %s\n", motdecrypt);
 }
