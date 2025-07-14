@@ -4,7 +4,7 @@
 
 void saisirMot(char *mot);
 void saisirBigramme(char *big1, char *big2);
-int compterBigramme(const char *mot, char big1, char big2);
+int compterBigramme(char *mot, char big1, char big2);
 void afficherResultat(char big1, char big2, int count);
 
 int main()
